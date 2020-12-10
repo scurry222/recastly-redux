@@ -12,7 +12,10 @@ var handleVideoSearch = (q) => {
       dispatch(changeVideoList(videos));
       dispatch(changeVideo(videos[0]));
     });
-  }, 0);
+  }, 1000, {
+    'leading': true,
+    'trailing': false
+  });
 };
 
 export default handleVideoSearch;

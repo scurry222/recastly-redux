@@ -13,9 +13,8 @@ import configureStore from './store/store.js';
 
 
 ReactDOM.render(
-  <Provider store={store} API_KEY={YOUTUBE_API_KEY} searchYouTube={searchYouTube}>
+  <Provider store={configureStore}>
+    <App API_KEY={YOUTUBE_API_KEY} searchYouTube={searchYouTube} />
   </Provider>,
   document.getElementById('app')
 );
-
-{/* <App API_KEY={YOUTUBE_API_KEY} searchYouTube={searchYouTube} />, */}
