@@ -12,8 +12,7 @@ var handleVideoSearch = (q) => {
       dispatch(changeVideoList(videos));
       dispatch(changeVideo(videos[0]));
     });
-  }, 1000
-  );
+  }, 0);
 };
 
 export default handleVideoSearch;
